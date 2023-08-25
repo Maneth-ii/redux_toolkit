@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 let initialState = [
     {
@@ -16,12 +16,23 @@ const laptopSlice = createSlice({
     name:'laptop',
     initialState,
     reducers:{
-        ADD_LAPTOP: (state , action) =>{
-            console.log(action.payload)
-            state.push(action.payload)
-        }
+        ADD_LAPTOP:{
+            reducer: (state , action) =>{
+                console.log(action.payload)
+                state.push(action.payload)
+            },
+            prepare: ({price , spec}) =>{
+                return{
+                    payload:{
+                        id:nanoid(),
+                        price,
+                        spec
+                    }}
+            }
+            
     }
 
+            }
 })
 
 export default laptopSlice.reducer

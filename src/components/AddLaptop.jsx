@@ -18,7 +18,6 @@ function onSubmit(e){
 }
 
   const [specs, setSpecs] = useState({
-    id:null,
     price:"",
     spec:{
         cpu: "",
@@ -58,8 +57,6 @@ function onSubmit(e){
         flexDirection: "column"
       }}
     >
-      <label htmlFor="id">ID</label>
-      <input type="text" name="id" id="id" onChange={(e) => handleChange(e)} />
       <label htmlFor="price">Price</label>
       <input type="text" name="price" id="price"  onChange={(e) => handleChange(e)}  />
 

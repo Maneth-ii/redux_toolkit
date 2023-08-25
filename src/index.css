@@ -5,7 +5,7 @@
 .container{
     padding: 1rem;
     border: 1px solid darkviolet;
-    background: darkgoldenrod;
+    background: rgb(235, 235, 235);
 }
 .child--container{
     padding: 1rem;
@@ -17,4 +17,12 @@
     gap: .4em;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+
+button{
+    padding: .5em 1em;
+    border: none;
+    box-shadow: 0px -5px 10px green;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }

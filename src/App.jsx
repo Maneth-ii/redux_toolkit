@@ -16,7 +16,7 @@ function App() {
       
       <div className="container">
         <button onClick={() => usetDispatch(userIncrement(1))}>INCREMENT USER by One</button>
-        <button onClick={() => usetDispatch(userDecrement(-1))}>DECREMENT USER by One</button>
+        <button onClick={() => usetDispatch(userDecrement(1))}>DECREMENT USER by One</button>
         <h3> Number Of Users: {users}</h3>
       </div>
 
